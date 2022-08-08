@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# This buildpack is valid only for the cedar-14 stack
-if [ "$STACK" = "heroku-20" ] || [ "$STACK" = "heroku-22" ]; then
-  echo "wkhtmltopdf-buildpack"
-  exit 0
-else
-  exit 1
-fi
+# Amended to let run on all Heroku stacks
+echo "wkhtmltopdf-buildpack"
+exit 0
