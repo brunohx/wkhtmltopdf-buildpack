@@ -22,7 +22,7 @@ FONTS_DIR=$(cd "$BIN_DIR/../fonts"; pwd)
 if [ -f $WKHTMLTOPDF_PKG ]; then
   echo "-----> Using wkhtmltopdf Debian package (jammy_amd64) from cache"
 else
-  echo "-----> Downloading wkhtmltopdf Debian package"
+  echo "-----> Downloading wkhtmltopdf Debian package (jammy_amd64)"
   curl -L $WKHTMLTOPDF_URL -o $WKHTMLTOPDF_PKG
 fi
 
